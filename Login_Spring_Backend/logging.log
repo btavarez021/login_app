@@ -8436,3 +8436,46 @@ org.hibernate.NonUniqueResultException: Query did not return a unique result: 3 
 [2024-03-24 19:17:01,183] [org.springframework.beans.factory.support.DisposableBeanAdapter] [SpringApplicationShutdownHook] [221] [WARN ] Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
 [2024-03-24 19:17:01,184] [com.zaxxer.hikari.HikariDataSource] [SpringApplicationShutdownHook] [350] [INFO ] HikariPool-1 - Shutdown initiated...
 [2024-03-24 19:17:01,185] [com.zaxxer.hikari.HikariDataSource] [SpringApplicationShutdownHook] [352] [INFO ] HikariPool-1 - Shutdown completed.
+[2024-03-24 19:17:06,246] [org.springframework.boot.StartupInfoLogger] [restartedMain] [50] [INFO ] Starting Main using Java 21.0.2 with PID 18228 (C:\Users\A271404\java_bootcamp\login_react_app\Login_Spring_Backend\target\classes started by A271404 in C:\Users\A271404\java_bootcamp\login_react_app)
+[2024-03-24 19:17:06,247] [org.springframework.boot.SpringApplication] [restartedMain] [654] [INFO ] No active profile set, falling back to 1 default profile: "default"
+[2024-03-24 19:17:06,303] [org.springframework.boot.logging.DeferredLog] [restartedMain] [252] [INFO ] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2024-03-24 19:17:06,304] [org.springframework.boot.logging.DeferredLog] [restartedMain] [252] [INFO ] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2024-03-24 19:17:07,169] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [restartedMain] [139] [INFO ] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2024-03-24 19:17:07,232] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [restartedMain] [208] [INFO ] Finished Spring Data repository scanning in 45 ms. Found 1 JPA repository interface.
+[2024-03-24 19:17:08,121] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [restartedMain] [109] [INFO ] Tomcat initialized with port 8080 (http)
+[2024-03-24 19:17:08,131] [org.apache.juli.logging.DirectJDKLog] [restartedMain] [173] [INFO ] Initializing ProtocolHandler ["http-nio-8080"]
+[2024-03-24 19:17:08,134] [org.apache.juli.logging.DirectJDKLog] [restartedMain] [173] [INFO ] Starting service [Tomcat]
+[2024-03-24 19:17:08,134] [org.apache.juli.logging.DirectJDKLog] [restartedMain] [173] [INFO ] Starting Servlet engine: [Apache Tomcat/10.1.19]
+[2024-03-24 19:17:08,176] [org.apache.juli.logging.DirectJDKLog] [restartedMain] [173] [INFO ] Initializing Spring embedded WebApplicationContext
+[2024-03-24 19:17:08,177] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] [restartedMain] [296] [INFO ] Root WebApplicationContext: initialization completed in 1871 ms
+[2024-03-24 19:17:08,381] [com.zaxxer.hikari.HikariDataSource] [restartedMain] [110] [INFO ] HikariPool-1 - Starting...
+[2024-03-24 19:17:08,584] [com.zaxxer.hikari.pool.HikariPool] [restartedMain] [565] [INFO ] HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:36db8d62-7a5c-4f62-b84e-9ddb10b2501f user=SA
+[2024-03-24 19:17:08,588] [com.zaxxer.hikari.HikariDataSource] [restartedMain] [123] [INFO ] HikariPool-1 - Start completed.
+[2024-03-24 19:17:08,604] [org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration] [restartedMain] [88] [INFO ] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:36db8d62-7a5c-4f62-b84e-9ddb10b2501f'
+[2024-03-24 19:17:08,997] [org.hibernate.jpa.internal.util.LogHelper] [restartedMain] [31] [INFO ] HHH000204: Processing PersistenceUnitInfo [name: default]
+[2024-03-24 19:17:09,114] [org.hibernate.Version] [restartedMain] [44] [INFO ] HHH000412: Hibernate ORM core version 6.4.4.Final
+[2024-03-24 19:17:09,149] [org.hibernate.cache.internal.RegionFactoryInitiator] [restartedMain] [50] [INFO ] HHH000026: Second-level cache disabled
+[2024-03-24 19:17:09,403] [org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo] [restartedMain] [87] [INFO ] No LoadTimeWeaver setup: ignoring JPA class transformer
+[2024-03-24 19:17:09,967] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator] [restartedMain] [58] [INFO ] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2024-03-24 19:17:09,991] [org.springframework.orm.jpa.AbstractEntityManagerFactoryBean] [restartedMain] [437] [INFO ] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2024-03-24 19:17:10,438] [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration] [restartedMain] [232] [WARN ] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2024-03-24 19:17:10,481] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] [restartedMain] [59] [INFO ] Adding welcome page: ServletContext resource [/index.html]
+[2024-03-24 19:17:11,166] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] [restartedMain] [59] [INFO ] LiveReload server is running on port 35729
+[2024-03-24 19:17:11,180] [org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver] [restartedMain] [58] [INFO ] Exposing 1 endpoint(s) beneath base path '/actuator'
+[2024-03-24 19:17:11,242] [org.apache.juli.logging.DirectJDKLog] [restartedMain] [173] [INFO ] Starting ProtocolHandler ["http-nio-8080"]
+[2024-03-24 19:17:11,261] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [restartedMain] [241] [INFO ] Tomcat started on port 8080 (http) with context path ''
+[2024-03-24 19:17:11,271] [org.springframework.boot.StartupInfoLogger] [restartedMain] [56] [INFO ] Started Main in 5.356 seconds (process running for 5.875)
+[2024-03-24 19:17:15,371] [org.apache.juli.logging.DirectJDKLog] [http-nio-8080-exec-2] [173] [INFO ] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2024-03-24 19:17:15,371] [org.springframework.web.servlet.FrameworkServlet] [http-nio-8080-exec-2] [532] [INFO ] Initializing Servlet 'dispatcherServlet'
+[2024-03-24 19:17:15,372] [org.springframework.web.servlet.FrameworkServlet] [http-nio-8080-exec-2] [554] [INFO ] Completed initialization in 1 ms
+[2024-03-24 19:17:15,438] [com.example.Service.LoginService] [http-nio-8080-exec-2] [31] [INFO ] LoginModel(userId=null, username=user, password=password) has been saved to the database
+[2024-03-24 19:17:25,757] [com.example.Controller.LoginController] [http-nio-8080-exec-3] [40] [INFO ] Authenticated user: LoginModel(userId=1, username=user, password=password)
+[2024-03-24 19:17:36,454] [com.example.Service.LoginService] [http-nio-8080-exec-4] [26] [INFO ]  not found or incorrect password.
+[2024-03-24 19:17:36,454] [com.example.Controller.LoginController] [http-nio-8080-exec-4] [40] [INFO ] Authenticated user: null
+[2024-03-24 19:17:43,351] [com.example.Controller.LoginController] [http-nio-8080-exec-5] [40] [INFO ] Authenticated user: LoginModel(userId=1, username=user, password=password)
+[2024-03-24 19:22:46,856] [com.example.Service.LoginService] [http-nio-8080-exec-9] [31] [INFO ] LoginModel(userId=null, username=btavarez, password=lowell19) has been saved to the database
+[2024-03-24 19:22:56,667] [com.example.Controller.LoginController] [http-nio-8080-exec-10] [40] [INFO ] Authenticated user: LoginModel(userId=2, username=btavarez, password=lowell19)
+[2024-03-24 19:23:21,674] [com.example.Controller.LoginController] [http-nio-8080-exec-1] [40] [INFO ] Authenticated user: LoginModel(userId=2, username=btavarez, password=lowell19)
+[2024-03-24 19:23:46,957] [com.example.Controller.LoginController] [http-nio-8080-exec-2] [40] [INFO ] Authenticated user: LoginModel(userId=2, username=btavarez, password=lowell19)
+[2024-03-24 19:23:57,585] [com.example.Controller.LoginController] [http-nio-8080-exec-4] [40] [INFO ] Authenticated user: LoginModel(userId=2, username=btavarez, password=lowell19)
+[2024-03-24 19:24:04,528] [com.example.Controller.LoginController] [http-nio-8080-exec-5] [40] [INFO ] Authenticated user: LoginModel(userId=2, username=btavarez, password=lowell19)
