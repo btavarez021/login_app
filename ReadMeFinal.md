@@ -1,3 +1,6 @@
+Prerequisite 
+   - ZULU 21
+
 1. open command prompt and install the following while in the Project folder
    - npm install react-router-dom@5.2.0
 2. CD to "./login_react_app\Login_Spring_Backend\src\main\java\com\example" 
