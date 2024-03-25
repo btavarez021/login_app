@@ -15,4 +15,4 @@
 5. Open up browser and go to http://localhost:3000/login (press F12 to see your login credentials and the session in the console.)
 6. Login with credentials that you registered with.
 7. This should take you to welcome landing page.
-8. Login twice to see the welcome page (bug that I need to fix).
+8. Login twice to see the welcome page (bug that I need to fix). IF that doesnt work then register again with the same or different username (try all these combinations).
