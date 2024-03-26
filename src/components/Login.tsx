@@ -12,7 +12,7 @@ const history = useHistory();
 
 const getCredentials = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    let getUsername = (document.getElementById("username") as HTMLInputElement).value;
+    let getEmployeeID = (document.getElementById("employeeID") as HTMLInputElement).value;
     let getPassword = (document.getElementById("password") as HTMLInputElement).value;
 
     try {
@@ -21,7 +21,7 @@ const getCredentials = async (event: React.FormEvent<HTMLFormElement>) => {
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify({ username: getUsername, password: getPassword })
+            body: JSON.stringify({ employeeID: getEmployeeID, password: getPassword })
         });
 
         if (response.ok) {
@@ -37,7 +37,7 @@ const getCredentials = async (event: React.FormEvent<HTMLFormElement>) => {
         console.error("Error: ", error);
     }
 
-    console.log(getUsername);
+    console.log(getEmployeeID);
     console.log(getPassword);
 };
 
@@ -47,7 +47,7 @@ return (
     ) : (
         <form onSubmit={getCredentials}>
             <div>
-                <label>Username: </label><input type="text" name="username" placeholder="Enter username" id="username" />
+                <label>Employee ID: </label><input type="text" name="employeeID" placeholder="Enter employeeID" id="employeeID" />
             </div>
             <div>
                 <label>Password: </label><input type="password" name="password" placeholder="Enter password" id="password" />
