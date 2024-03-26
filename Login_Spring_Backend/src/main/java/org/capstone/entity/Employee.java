@@ -1,4 +1,4 @@
-package com.example.Model;
+package org.capstone.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -9,12 +9,11 @@ import lombok.*;
 @Entity
 @Data
 
-public class LoginModel {
+public class Employee {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long userId;
     private String username;
     private String password;
-
 
 }

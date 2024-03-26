@@ -1,9 +1,8 @@
-package com.example.Service;
+package org.capstone.service;
 
-import com.example.Model.LoginModel;
-import com.example.Repository.LoginRepository;
+import org.capstone.entity.Employee;
+import org.capstone.repository.LoginRepository;
 import lombok.extern.slf4j.Slf4j;
-import org.h2.engine.User;
 import org.springframework.beans.factory.annotation.Autowired;
 //import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
@@ -17,8 +16,9 @@ public class LoginService {
         this.loginRepository = loginRepository;
     }
 
-    public com.example.Model.LoginModel authenticate(String username, String password) {
-        LoginModel user = loginRepository.findByUsername(username);
+    public Employee authenticate(String username, String password) {
+        Employee user = loginRepository.findByUsername(username);
+        System.out.println("Here is my login info: " + user);
         if (user != null && user.getPassword().equals(password)) {
             // Check if the provided password matches the stored password
             return user;
@@ -27,7 +27,7 @@ public class LoginService {
         return null; // User not found or incorrect password
     }
 
-    public void saveUser(LoginModel user) {
+    public void saveUser(Employee user) {
         log.info(user + " has been saved to the database");
         loginRepository.save(user);
     }

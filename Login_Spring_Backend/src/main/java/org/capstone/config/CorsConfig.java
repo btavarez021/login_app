@@ -1,4 +1,4 @@
-package com.example.config;
+package org.capstone.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;

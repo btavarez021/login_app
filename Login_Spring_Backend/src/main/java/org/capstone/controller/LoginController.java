@@ -1,14 +1,12 @@
-package com.example.Controller;
+package org.capstone.controller;
 
 
-import com.example.Model.LoginModel;
-import com.example.Repository.LoginRepository;
-import com.example.Service.LoginService;
+import org.capstone.entity.Employee;
+import org.capstone.service.LoginService;
 import jakarta.servlet.http.HttpSession;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.HttpSessionRequiredException;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -29,18 +27,18 @@ public class LoginController {
     }
 
     @PostMapping("/register")
-    public ResponseEntity<String> registerUser(@RequestBody LoginModel user) {
+    public ResponseEntity<String> registerUser(@RequestBody Employee user) {
         loginService.saveUser(user);
         return ResponseEntity.ok("User registered successfully");
     }
 
     @PostMapping("/login")
-    public ResponseEntity<String> finalLogin(@RequestBody LoginModel loginUser, HttpSession session) {
-        LoginModel authenticatedUser = loginService.authenticate(loginUser.getUsername(), loginUser.getPassword());
+    public ResponseEntity<String> finalLogin(@RequestBody Employee loginUser, HttpSession session) {
+        Employee authenticatedUser = loginService.authenticate(loginUser.getUsername(), loginUser.getPassword());
         log.info("Authenticated user: " + authenticatedUser);
         if (authenticatedUser != null) {
             session.setAttribute("userId", loginUser.getUserId());
-            return ResponseEntity.ok("Login successfull. Session created.");
+            return ResponseEntity.ok("Login successfully. Session created.");
         } else {
             return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Invalid username or password");
         }
